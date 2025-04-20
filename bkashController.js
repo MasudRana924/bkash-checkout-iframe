@@ -19,7 +19,7 @@ function loadConfig() {
 function saveConfig(newConfig) {
   try {
     fs.writeFileSync(
-      path.join(__dirname, "../config/config.json"),
+      path.join(__dirname, "./config.json"),
       JSON.stringify(newConfig, null, 2)
     );
     console.log("Config updated successfully");
