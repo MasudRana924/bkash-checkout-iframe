@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const bkashController = require('../controllers/bkashController');
+const bkashController = require('./bkashController');
 
 // bKash payment routes
 router.post('/token', bkashController.getToken);
