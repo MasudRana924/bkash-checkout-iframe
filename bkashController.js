@@ -6,7 +6,7 @@ const axios = require("axios");
 function loadConfig() {
   try {
     const rawData = fs.readFileSync(
-      path.join(__dirname, "../config/config.json")
+      path.join(__dirname, "./config.json")
     );
     return JSON.parse(rawData);
   } catch (error) {
